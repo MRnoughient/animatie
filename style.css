@@ -1,0 +1,40 @@
+body{
+  background-color: lightpink;
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr, auto, auto, 1fr;
+  justify-content: center;
+  align-items: center;
+  grid-gap: 1em;
+  overflow-x: hidden;
+}
+
+#button{
+  background-color: black;
+  color: white;
+  grid-column: 2/3;
+}
+
+.square{
+  background-color: lightblue;
+  grid-column: 3/4;
+  width: 5em;
+  height: 5em;
+  transition: transform 1s cubic-bezier(.17,.67,.61,1.15);
+}
+/* .square1{
+  transition-delay: 0.2s;
+}
+.square2{
+  transition-delay: 0.4s;
+}
+.square3{
+  transition-delay: 0.6s;
+}
+.square4{
+  transition-delay: 0.8s;
+} */
+
+.active-out{
+  transform: translateX(50vw);
+}
